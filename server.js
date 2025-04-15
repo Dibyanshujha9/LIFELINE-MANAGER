@@ -27,19 +27,17 @@ app.use("/api/v1/inventory",require("./routes/inventoryRoutes"));
 app.use("/api/v1/analytics", require("./routes/analyticsRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 
-if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, 'client', 'build')))
 
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
     })
-}
 
 
 // port 
 const PORT = process.env.PORT || 8080;
 
 // listen 
-app.listen(PORT , ()=>{
-    console.log(`Server running in ${process.env.DEV_MODE} mode on port ${process.env.PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running in ${process.env.DEV_MODE} mode on port ${PORT}`);
 });
