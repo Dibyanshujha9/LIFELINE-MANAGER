@@ -1,0 +1,182 @@
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+/* ===========
+==== FORM
+=========== */
+
+.form-banner img {
+  height: 100%;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+/* =============
+====== laoder 
+=============== */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ======================
+--------- navbar 
+=================== */
+
+.navbar {
+  background-color: black !important;
+  color: white !important;
+}
+.nav-link,
+.navbar-brand {
+  background-color: black !important;
+  color: white !important;
+}
+
+
+/* ======================
+--------- Home Register logo animation 
+=================== */
+
+.form-banner img {
+  width: 100%;
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ======================
+--------- Footer
+=================== */
+
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.footer h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+.footer p {
+  font-size: 16px;
+  color: #555;
+}
+
+.footer a {
+  font-size: 16px;
+  color: #2980b9;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ======================
+--------- Floating Button
+=================== */
+
+
+.needed-person-btn {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  padding: 4px 8px;
+  font-size: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+/************************************
+Media querry 
+*************************************/
+/* Desktop & default styles */
+
+/* Default desktop styling (optional adjustments) */
+.form-banner img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .row.g-0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    transform: scale(0.9); /* Zoom out */
+    transform-origin: top center;
+  }
+
+  .form-banner,
+  .form-container {
+    width: 100% !important;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .form-container form {
+    width: 100%;
+  }
+
+  .form-banner img {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0;
+  }
+}
