@@ -65,6 +65,12 @@ address:{
     required: [true,"address is required"],
         },   
 
+// this is for the past medical history 
+// pastMedicalHistory:{
+//     type: String,
+//     required: [true,"past medical history is required"],
+// },
+
 // this is for the phone string 
 phone: {
     type: String,
