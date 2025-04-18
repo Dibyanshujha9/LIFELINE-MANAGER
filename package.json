@@ -6,16 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "npm install && cd ./client && npm install",
-    "server" : "nodemon server.js",
-    "client" : "npm start --prefix ./client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build:client": "npm run build --prefix client",
     "build": "npm run build:client",
-    "start": "node server.js" 
+    "start": "node server.js"
   },
   "author": "Dibyanshu jha",
   "license": "ISC",
   "dependencies": {
+    "aos": "^2.3.4",
     "bcryptjs": "^3.0.2",
     "colors": "^1.4.0",
     "concurrently": "^9.1.2",

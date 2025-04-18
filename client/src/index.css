@@ -131,8 +131,8 @@
   background-color: red;
   color: white;
   border: 1px solid red;
-  padding: 4px 8px;
-  font-size: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -310,5 +310,31 @@ Media querry
   img[src*="banner1.png"] {
     width: 200%; /* Increase width by 20% */
     height: 112%; /* Maintain aspect ratio */
+  }
+}
+
+
+
+
+/************************************
+Media querry && Free Info Section
+*************************************/
+.free-section {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+}
+
+.free-section img {
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.free-section img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .free-section {
+    text-align: center;
   }
 }

@@ -6,6 +6,7 @@ import Spinner from "./../../components/shared/Spinner";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 import FloatingNeededButton from "./Floating";
+import FreeInfoSection from "./FreeInfoSection";
 
 
 const Login = () => {
@@ -29,6 +30,7 @@ const Login = () => {
               formType={"login"}
             />
           </div>
+          <FreeInfoSection />
           <Footer />
         </div>
       )}
