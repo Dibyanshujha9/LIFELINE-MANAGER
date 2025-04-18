@@ -10,6 +10,7 @@ import {
   Tooltip,
   Legend
 } from 'chart.js';
+import HomeTable from '../HomeTable';
 
 // Register chart components
 ChartJS.register(
@@ -147,6 +148,11 @@ const MyChart = () => {
           </a>
         </div>
       </div>
+{/* Table section  */}
+<div>
+
+<HomeTable />
+</div>
 
       {/* Google Map iframe */}
       <div style={{ marginTop: '20px' }}>
