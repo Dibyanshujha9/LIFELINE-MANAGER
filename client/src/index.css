@@ -309,6 +309,6 @@ Media querry
 @media (max-width: 768px) {
   img[src*="banner1.png"] {
     width: 200%; /* Increase width by 20% */
-    height: 115%; /* Maintain aspect ratio */
+    height: 112%; /* Maintain aspect ratio */
   }
 }
