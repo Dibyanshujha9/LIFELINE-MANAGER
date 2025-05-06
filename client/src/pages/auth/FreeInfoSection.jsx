@@ -18,7 +18,7 @@ const FreeInfoSection = () => {
         <div className="row align-items-center" data-aos="fade-up">
           <div className="col-md-6 mb-4 mb-md-0">
             <img
-              src="https://img.freepik.com/free-vector/free-trial-concept-illustration_114360-7964.jpg"
+              src="https://img.freepik.com/free-vector/doctor-examining-patient-clinic-illustrated_23-2148856559.jpg"
               alt="Free Service"
               className="img-fluid rounded-4 shadow"
             />

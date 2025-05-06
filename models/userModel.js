@@ -57,12 +57,13 @@ unique: true,
     // this is for the website field 
     website:{
         type: String,
+        required: [false,"website is required"],
     },
 
 //  this is for the address field 
 address:{
     type: String,
-    required: [true,"address is required"],
+    required: [false,"address is required"],
         },   
 
 // this is for the phone string 
