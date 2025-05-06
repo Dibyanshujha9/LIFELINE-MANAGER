@@ -18,8 +18,7 @@ const FreeInfoSection = () => {
         <div className="row align-items-center" data-aos="fade-up">
           <div className="col-md-6 mb-4 mb-md-0">
             <img
-              src="https://img.freepik.com/free-vector/free-trial-concept-illustration_114360-7964.jpg"
-              alt="Free Service"
+              src="https://img.freepik.com/free-vector/doctor-examining-patient-clinic-illustrated_23-2148856559.jpg"
               className="img-fluid rounded-4 shadow"
             />
           </div>
@@ -30,8 +29,8 @@ const FreeInfoSection = () => {
               Our platform is <strong>completely free</strong> — no hidden charges, no subscription, ever.
             </p>
             <p className="text-muted">
-              Whether you’re searching for a donor, registering to help, or managing a blood request —
-              it’s all on us, forever.
+              Whether you're searching for a donor, registering to help, or managing a blood request —
+              it's all on us, forever.
             </p>
             <button
               className="btn btn-danger mt-3 px-4 py-2"
